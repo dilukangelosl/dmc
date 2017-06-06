@@ -1,18 +1,40 @@
+
+
+
+
+
 <ion-header>
-  <ion-navbar>
+
+  <ion-navbar color="primary">
+    
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      Disaster Management App
+    </ion-title>
+    
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content fullscreen="true">
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+
+<ion-fab top left >
+    <button ion-fab mini (click)="centerLocation()"><ion-icon name="navigate"></ion-icon></button>
+   
+  </ion-fab>
+
+<div #map id="map"></div>  
+
+
+<div id="floatingbutton">
+  <div class="waves"></div>
+  <button ion-fab color="danger"  ><ion-icon name="add"></ion-icon></button>
+
+</div>
+
 </ion-content>
+
